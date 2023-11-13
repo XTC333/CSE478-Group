@@ -1,0 +1,18 @@
+/*BASIC*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#control-panel {
+    margin-bottom: 20px;
+    /* Add more styles for your control panel here */
+}
+
+#beeswarm-chart {
+    border: 1px solid #ccc;
+    /* Additional styles for your SVG */
+}
