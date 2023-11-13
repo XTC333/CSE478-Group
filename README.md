@@ -26,7 +26,8 @@
 ### Screenshots
 
 - [Include screenshots of the current prototype showing the implemented visualizations.]
-  https://github.com/XTC333/CSE478-Group/blob/main/imgs/phase%201%20viz.png
+  ![Phase 1 Visualization](imgs/phase%201%20viz.png)
+
   
 
 ### Data Source and Preprocessing
