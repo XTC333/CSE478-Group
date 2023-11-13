@@ -37,8 +37,13 @@
 ### Installation
 
 - Clone the repository: `git clone [repository URL]`
+- Open terminal 
 - Navigate to the project directory: `cd [project directory]`
-- Open `index.html` in a web browser to view the project.
+- Paste the following:
+
+  $ run  python -m http.server
+
+- Open `http://localhost:8000/` in a web browser to view the project.
 
 ### Usage
 
