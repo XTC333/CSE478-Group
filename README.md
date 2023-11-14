@@ -55,8 +55,12 @@ Create visual 6
 
 ### Data Source and Preprocessing
 
-- Original Data Source: [Provide a link to the original data source.]
+- Original Data Source: https://www.forbes.com/advisor/mortgages/cost-of-living-by-state/
 - Data Preprocessing: [Describe any preprocessing steps like cleaning, aggregation, or transformation applied to the data.]
+- At this point, we are trying to select the most relevant features for analysis.
+- Also, our group is trying to convert categorical data into a numerical format.
+- Our group is planning to split the data into training and test sets to evaluate the performance of predictive models.
+
 
 ## Installation and Usage
 
