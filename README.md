@@ -49,7 +49,7 @@
 
   ![Phase 1 Visualization](imgs/phase%201%20viz.png)
 
-  
+  ![Phase 1.1 Visualization](imgs/phase%201.1%20viz.png)
 
 ### Data Source and Preprocessing
 
