@@ -47,9 +47,10 @@
 
 ### Screenshots
 
-  ![Phase 1 Visualization](imgs/phase%201%20viz.png)
+ ![Phase 1 Visualization](https://github.com/XTC333/CSE478-Group/blob/main/imgs/phase%201%20viz.png?raw=true)
 
-  ![Phase 1.1 Visualization](imgs/phase%201.1%20viz.png)
+![Phase 1.1 Visualization](https://github.com/XTC333/CSE478-Group/blob/main/imgs/phase%201.1%20viz.png?raw=true)
+
 
 ### Data Source and Preprocessing
 
