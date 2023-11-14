@@ -1,4 +1,4 @@
-# CSE478-Group
+# CSE478-Group WIP Write UP
 
 
 ## Project Overview
