@@ -2,122 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cost of Living: Struggling to Make Ends Meet</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .team-info {
-            background-color: #e9ecef;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        .visualization-placeholder {
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 50px 0;
-            margin-bottom: 20px;
-            border: 1px dashed #ccc;
-        }
-		
-    </style>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <style type="text/css">
+    body {
+      font: 11px sans-serif;
+      background-color: #ffffff;
+    }
+
+    .legend {
+      position: absolute;
+      left: 20px;
+      top: 30px;
+    }
+
+    .axis text {
+      font: 10px sans-serif;
+    }
+
+    .axis line,
+    .axis path {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 5px;
+      pointer-events: none;
+      display: none;
+      position: absolute;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .tooltip::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    .hovered {
+      fill: yellow;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>The Cost of Living: Struggling to Make Ends Meet</h1>
-        <p>A Visualization of Income Disparities Across U.S. States</p>
-    </div>
+  <h1>Real Median Household Income by State 2022</h1>
+  <!-- Separate div for the legend -->
+  <div class="legend"></div>
 
-    <div class="container">
-        <div class="team-info">
-            <h2>Team Members</h2>
-            <p>Ta-Shen Chen (tchen128@asu.edu, ID: 1218877556)</p>
-            <p>Nina Bryson (nbryson1@asu.edu, ID: 1216354815)</p>
-            <p>Raima Aiyer (raiyer1@asu.edu, ID: 1219074155)</p>
-            <p>Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901)</p>
-        </div>
+  <div class="tooltip"></div>
 
-        <div class="overview">
-            <h2>Overview</h2>
-            <p>In the United States, the pursuit of the American Dream has historically been synonymous with the idea of prosperity, financial security, and upward mobility. However, our project, "The Cost of Living: Struggling to Make Ends Meet," unveils a sobering reality: the dream of achieving a comfortable life is slipping further from the grasp of average income earners. This visual essay aims to illuminate the growing lack of opportunities for those who fall within the middle-income bracket, while also distinguishing between average, above-average, and below-average incomes per state.</p>
-        </div>
+  <script type="text/javascript">
 
-        <!-- Placeholder for Visualizations -->
-        <div class="visualization-placeholder">
-            <h3>Visualization 1</h3>
-            <p>Interactive map showing income disparities across states</p>
-            <!-- Placeholder for the actual visualization (interactive map) -->
-        </div>
+    var width = 960;
+    var height = 500;
 
-        <div class="visualization-placeholder">
-            <h3>Visualization 2</h3>
-            <p>Scatter plot correlating cost of living with median incomes</p>
-            <!-- Placeholder for the actual visualization -->
-			
-        </div>
+    var lowColor = '#b7e4c7'
+    var highColor = '#006837'
 
-        <!-- Additional visualizations can be added here -->
-		<!-- Visualization 3: Box-and-Whisker Plot -->
+    // D3 Projection
+    var projection = d3.geoAlbersUsa()
+      .translate([width / 2, height / 2])
+      .scale([1000]);
 
-		<div class="visualization-placeholder">
-			<h3>Visualization 3</h3>
-			<p>Box-and-whisker plot showing the distribution of median incomes across the U.S.</p>
-			<!-- Placeholder for the actual visualization -->
-		</div>
+    var path = d3.geoPath()
+      .projection(projection);
 
-		<!-- Visualization 4: Radial Progress Chart -->
-		<div class="visualization-placeholder">
-			<h3>Visualization 4: Radial Progress Chart</h3>
-			<p>Radial progress charts showing the percentage of households at different income levels.</p>
-			<div id="radialProgressChart"></div>
-			<!-- D3.js will render the radial progress chart here -->
-		</div>
 
-		<!-- Visualization 5: Connected Scatter Plot -->
-		<div class="visualization-placeholder">
-			<h3>Visualization 5: Connected Scatter Plot</h3>
-			<p>Connected scatter plot showing the relationship between median income and unemployment rates over time.</p>
-			<div id="connectedScatterPlot"></div>
-			<!-- D3.js will render the connected scatter plot here -->
-		</div>
+    var svg = d3.select("body")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .style("margin-left", 120)
+      .call(d3.zoom().on("zoom", function () {
+        svg.attr("transform", d3.event.transform)
+      }))
+      .append("g");
 
-		<!-- Placeholder for Visualization 6 -->
-		<div class="visualization-placeholder">
-			<h3>Visualization 6: Innovative View</h3>
-			<p>Description of the innovative visualization, which could be an extension or a novel type.</p>
-			<div id="innovativeView"></div>
-			<!-- Placeholder for the actual innovative visualization -->
-		</div>
-		
-		
-		
-    </div>
+    // Create tooltip
+    var tooltip = d3.select(".tooltip");
 
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!-- Link to your JavaScript file(s) -->
-    <<script src="group21.js"></script>
+    d3.json("us-income.json", function (data) {
+      var dataArray = [];
+      for (var d = 0; d < data.length; d++) {
+        dataArray.push(parseFloat(data[d].income))
+      }
+      var minVal = d3.min(dataArray)
+      var maxVal = d3.max(dataArray)
+      var ramp = d3.scaleLinear().domain([minVal, maxVal]).range([lowColor, highColor])
+
+      d3.json("us-states.json", function (json) {
+
+        for (var i = 0; i < data.length; i++) {
+
+          var stateName = data[i].state_name;
+          var stateIncome = data[i].income;
+
+          for (var j = 0; j < json.features.length; j++) {
+            var jsonState = json.features[j].properties.name;
+            if (stateName == jsonState) {
+              json.features[j].properties.value = stateIncome;
+              break;
+            }
+          }
+        }
+
+        svg.selectAll("path")
+          .data(json.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("stroke", "#fff")
+          .style("stroke-width", "1")
+          .style("fill", function (d) { return ramp(d.properties.value) })
+          .on("mouseover", function (d) {
+            d3.select(this).transition().duration(300)
+              .style("fill", "gray")
+              .style("stroke", "gray")
+              .style("stroke-width", 2);
+
+            tooltip.style("display", "inline-block")
+              .html(`<strong>${d.properties.name}</strong><br>Income: $${d.properties.value.toLocaleString()}`)
+              .style("left", d3.event.pageX - tooltip.node().offsetWidth / 2 + "px")
+              .style("top", d3.event.pageY - tooltip.node().offsetHeight - 10 + "px");
+          })
+          .on("mousemove", function (d) {
+            tooltip
+              .style("left", d3.event.pageX - tooltip.node().offsetWidth / 2 + "px")
+              .style("top", d3.event.pageY - tooltip.node().offsetHeight - 10 + "px");
+          })
+          .on("mouseout", function (d) {
+            d3.select(this).transition().duration(300)
+              .style("fill", function (d) { return ramp(d.properties.value) })
+              .style("stroke", "#fff")
+              .style("stroke-width", 1);
+
+            tooltip.style("display", "none");
+          });
+
+
+        // Move the legend creation outside the D3.json callback
+        createLegend(minVal, maxVal);
+      });
+    });
+
+    // Function to create the legend
+    function createLegend(minVal, maxVal) {
+      // add a legend
+      var legendDiv = d3.select(".legend");
+
+      var w = 140, h = 300;
+
+      var key = legendDiv.append("svg")
+        .attr("width", w)
+        .attr("height", h)
+        .attr("class", "legend");
+
+      var legend = key.append("defs")
+        .append("svg:linearGradient")
+        .attr("id", "gradient")
+        .attr("x1", "100%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "100%")
+        .attr("spreadMethod", "pad");
+
+      legend.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", highColor)
+        .attr("stop-opacity", 1);
+
+      legend.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", lowColor)
+        .attr("stop-opacity", 1);
+
+      key.append("rect")
+        .attr("width", w - 100)
+        .attr("height", h)
+        .style("fill", "url(#gradient)")
+        .attr("transform", "translate(0,10)");
+
+      var y = d3.scaleLinear()
+        .range([h, 0])
+        .domain([minVal, maxVal]);
+
+      var yAxis = d3.axisRight(y);
+
+      key.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(41,10)")
+        .call(yAxis);
+    }
+  </script>
 </body>
-
-</html>
 
 </html>
