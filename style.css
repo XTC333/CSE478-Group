@@ -1,18 +1,78 @@
-/*BASIC*/
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.team-info {
+  background-color: #e9ecef;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.visualization-placeholder {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 20px;
+  border: 1px dashed #ccc;
+  overflow-y:scroll;
 }
 
-header {
-    text-align: center;
+.legend {
+  position: absolute;
+  left: 20px;
+  top: 70px;
 }
 
-#control-panel {
-    margin-bottom: 20px;
-    /* Add more styles for your control panel here */
+.axis text {
+  font: 10px sans-serif;
 }
 
-#beeswarm-chart {
-    border: 1px solid #ccc;
-    /* Additional styles for your SVG */
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.custom-tooltip {
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  pointer-events: none;
+  display: none;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.custom-tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.hovered {
+  fill: yellow;
+  stroke: #fff;
+  stroke-width: 2;
 }
