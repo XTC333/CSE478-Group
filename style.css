@@ -16,3 +16,7 @@ header {
     border: 1px solid #ccc;
     /* Additional styles for your SVG */
 }
+
+#scatterplot {
+    border: 1px solid #ccc;
+}
