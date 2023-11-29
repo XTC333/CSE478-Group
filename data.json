@@ -1,0 +1,308 @@
+[
+    {
+      "state": "Alabama",
+      "rate": 2.3,
+      "income": 59910,
+      "CostOfLivingIndex2023": 88.8
+    },
+    {
+      "state": "Alaska",
+      "rate": 4.3,
+      "income": 89740,
+      "CostOfLivingIndex2023": 124.4
+    },
+    {
+      "state": "Arizona",
+      "rate": 4.2,
+      "income": 73450,
+      "CostOfLivingIndex2023": 107.2
+    },
+    {
+      "state": "Arkansas",
+      "rate": 3.1,
+      "income": 53980,
+      "CostOfLivingIndex2023": 90.3
+    },
+    {
+      "state": "California",
+      "rate": 4.8,
+      "income": 85300,
+      "CostOfLivingIndex2023": 134.5
+    },
+    {
+      "state": "Colorado",
+      "rate": 3.3,
+      "income": 89930,
+      "CostOfLivingIndex2023": 105.5
+    },
+    {
+      "state": "Connecticut",
+      "rate": 3.5,
+      "income": 90730,
+      "CostOfLivingIndex2023": 113.1
+    },
+    {
+      "state": "Delaware",
+      "rate": 4.2,
+      "income": 80750,
+      "CostOfLivingIndex2023": 102.6
+    },
+    {
+      "state": "District of Columbia",
+      "rate": 5.0,
+      "income": 101700,
+      "CostOfLivingIndex2023": 148.7
+    },
+    {
+      "state": "Florida",
+      "rate": 2.8,
+      "income": 65370,
+      "CostOfLivingIndex2023": 102.3
+    },
+    {
+      "state": "Georgia",
+      "rate": 3.4,
+      "income": 67730,
+      "CostOfLivingIndex2023": 91
+    },
+    {
+      "state": "Hawaii",
+      "rate": 2.9,
+      "income": 91010,
+      "CostOfLivingIndex2023": 179
+    },
+    {
+      "state": "Idaho",
+      "rate": 3.2,
+      "income": 72580,
+      "CostOfLivingIndex2023": 106.1
+    },
+    {
+      "state": "Illinois",
+      "rate": 4.6,
+      "income": 78020,
+      "CostOfLivingIndex2023": 90.8
+    },
+    {
+      "state": "Indiana",
+      "rate": 3.6,
+      "income": 70030,
+      "CostOfLivingIndex2023": 91.5
+    },
+    {
+      "state": "Iowa",
+      "rate": 3.2,
+      "income": 76320,
+      "CostOfLivingIndex2023": 89.7
+    },
+    {
+      "state": "Kansas",
+      "rate": 2.9,
+      "income": 73040,
+      "CostOfLivingIndex2023": 87.7
+    },
+    {
+      "state": "Kentucky",
+      "rate": 4.2,
+      "income": 55880,
+      "CostOfLivingIndex2023": 93.8
+    },
+    {
+      "state": "Louisiana",
+      "rate": 3.3,
+      "income": 58330,
+      "CostOfLivingIndex2023": 92
+    },
+    {
+      "state": "Maine",
+      "rate": 2.8,
+      "income": 75160,
+      "CostOfLivingIndex2023": 111.5
+    },
+    {
+      "state": "Maryland",
+      "rate": 1.7,
+      "income": 108200,
+      "CostOfLivingIndex2023": 119.5
+    },
+    {
+      "state": "Massachusetts",
+      "rate": 2.8,
+      "income": 93550,
+      "CostOfLivingIndex2023": 148.4
+    },
+    {
+      "state": "Michigan",
+      "rate": 4.1,
+      "income": 68990,
+      "CostOfLivingIndex2023": 92.7
+    },
+    {
+      "state": "Minnesota",
+      "rate": 3.2,
+      "income": 90390,
+      "CostOfLivingIndex2023": 94.1
+    },
+    {
+      "state": "Mississippi",
+      "rate": 3.3,
+      "income": 48610,
+      "CostOfLivingIndex2023": 85.3
+    },
+    {
+      "state": "Missouri",
+      "rate": 3.1,
+      "income": 71520,
+      "CostOfLivingIndex2023": 88.4
+    },
+    {
+      "state": "Montana",
+      "rate": 2.8,
+      "income": 72980,
+      "CostOfLivingIndex2023": 103.7
+    },
+    {
+      "state": "Nebraska",
+      "rate": 2.2,
+      "income": 78360,
+      "CostOfLivingIndex2023": 90.1
+    },
+    {
+      "state": "Nevada",
+      "rate": 5.4,
+      "income": 72330,
+      "CostOfLivingIndex2023": 101.3
+    },
+    {
+      "state": "New Hampshire",
+      "rate": 2.1,
+      "income": 84970,
+      "CostOfLivingIndex2023": 115
+    },
+    {
+      "state": "New Jersey",
+      "rate": 4.6,
+      "income": 92340,
+      "CostOfLivingIndex2023": 114.1
+    },
+    {
+      "state": "New Mexico",
+      "rate": 3.8,
+      "income": 56420,
+      "CostOfLivingIndex2023": 94.2
+    },
+    {
+      "state": "New York",
+      "rate": 4.2,
+      "income": 75910,
+      "CostOfLivingIndex2023": 125.1
+    },
+    {
+      "state": "North Carolina",
+      "rate": 3.4,
+      "income": 65070,
+      "CostOfLivingIndex2023": 96.1
+    },
+    {
+      "state": "North Dakota",
+      "rate": 1.9,
+      "income": 78720,
+      "CostOfLivingIndex2023": 94.6
+    },
+    {
+      "state": "Ohio",
+      "rate": 3.6,
+      "income": 67520,
+      "CostOfLivingIndex2023": 94
+    },
+    {
+      "state": "Oklahoma",
+      "rate": 3.2,
+      "income": 63440,
+      "CostOfLivingIndex2023": 86
+    },
+    {
+      "state": "Oregon",
+      "rate": 3.6,
+      "income": 86780,
+      "CostOfLivingIndex2023": 115.1
+    },
+    {
+      "state": "Pennsylvania",
+      "rate": 3.4,
+      "income": 72210,
+      "CostOfLivingIndex2023": 99
+    },
+    {
+      "state": "Rhode Island",
+      "rate": 2.7,
+      "income": 80650,
+      "CostOfLivingIndex2023": 110.5
+    },
+    {
+      "state": "South Carolina",
+      "rate": 2.9,
+      "income": 61770,
+      "CostOfLivingIndex2023": 96.5
+    },
+    {
+      "state": "South Dakota",
+      "rate": 2.0,
+      "income": 67180,
+      "CostOfLivingIndex2023": 93.8
+    },
+    {
+      "state": "Tennessee",
+      "rate": 3.3,
+      "income": 65380,
+      "CostOfLivingIndex2023": 90.4
+    },
+    {
+      "state": "Texas",
+      "rate": 4.1,
+      "income": 74640,
+      "CostOfLivingIndex2023": 93
+    },
+    {
+      "state": "Utah",
+      "rate": 2.7,
+      "income": 95800,
+      "CostOfLivingIndex2023": 101.5
+    },
+    {
+      "state": "Vermont",
+      "rate": 2.0,
+      "income": 72190,
+      "CostOfLivingIndex2023": 114.9
+    },
+    {
+      "state": "Virginia",
+      "rate": 2.7,
+      "income": 85170,
+      "CostOfLivingIndex2023": 103.1
+    },
+    {
+      "state": "Washington",
+      "rate": 3.8,
+      "income": 89430,
+      "CostOfLivingIndex2023": 115.1
+    },
+    {
+      "state": "West Virginia",
+      "rate": 4.0,
+      "income": 52460,
+      "CostOfLivingIndex2023": 90.3
+    },
+    {
+      "state": "Wisconsin",
+      "rate": 3.2,
+      "income": 73330,
+      "CostOfLivingIndex2023": 95
+    },
+    {
+      "state": "Wyoming",
+      "rate": 2.9,
+      "income": 73090,
+      "CostOfLivingIndex2023": 92.8
+    }
+  ]
