@@ -90,21 +90,31 @@ The interface built is a web-based data visualization platform featuring interac
 
 ## What the implemented visualizations and what do they allow a user to do? For each visualization, describe the encoding choices and your rationale for the design decisions.
 
-	1. Choropleth Map (Vis 1): Displays income disparities across U.S. states through color gradients, with interactivity enabling users to see specific state income levels upon hovering.
+1. Choropleth Map (Vis 1): Displays income disparities across U.S. states through color gradients, with interactivity enabling users to see specific state income levels upon hovering.
 
 
 ![Visualization 1](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis1.png?raw=true)
 
 
-	2. Scatter Plot (Vis 2): Correlates cost of living with median incomes, allowing users to observe and understand the relationship between these two variables.
+2. Scatter Plot (Vis 2): Correlates cost of living with median incomes, allowing users to observe and understand the relationship between these two variables.
 
-	 3. Box and Whisker Plot (Vis 3): Shows the distribution of median incomes across the U.S., giving insights into the spread and outliers of income data.
-		
-	 4. Radial Progress Chart (Vis 4): Represents the percentage of households at different income levels in a radial format, allowing users to quickly grasp the income distribution.
-		
-	 5. Connected Scatter Plot (Vis 5): Shows the relationship between median income and unemployment rates, with the connection lines highlighting trends or changes over time.
-	  
-	 6. Radial Histogram (Innovative Vis 6): Our innovative visualization, which uses a radial layout to display median income per state. The length of each bar corresponds to the income amount, offering a novel approach to comparing incomes across states.
+![Visualization 2](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis2.png?raw=true)
+
+3. Box and Whisker Plot (Vis 3): Shows the distribution of median incomes across the U.S., giving insights into the spread and outliers of income data.
+
+ ![Visualization 3](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis3.png?raw=true)
+ 
+ 4. Radial Progress Chart (Vis 4): Represents the percentage of households at different income levels in a radial format, allowing users to quickly grasp the income distribution.
+
+![Visualization 4](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis4.png?raw=true)
+ 
+ 5. Connected Scatter Plot (Vis 5): Shows the relationship between median income and unemployment rates, with the connection lines highlighting trends or changes over time.
+
+  ![Visualization 5](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis5.png?raw=true)
+  
+ 6. Radial Histogram (Innovative Vis 6): Our innovative visualization, which uses a radial layout to display median income per state. The length of each bar corresponds to the income amount, offering a novel approach to comparing incomes across states.
+
+![Visualization 6](https://github.com/XTC333/CSE478-Group/blob/main/imgs/vis6.png?raw=true)
 
 
 ## What are the interactions?
@@ -118,6 +128,8 @@ The interface built is a web-based data visualization platform featuring interac
 ## What algorithms are necessary to support your idioms?
 
 - The algorithms supporting these idioms include data sorting, scale computations, and arc generation for radial layouts.
+
+
 
 
   
