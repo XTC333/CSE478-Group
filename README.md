@@ -80,7 +80,11 @@
 - Interact with the visualizations to explore different data aspects.
 - [Additional usage instructions based on the implemented features.]
 
-## Contributors
+## Reflection
+The core goals of our project remained generally consistent throughout the process with only a few changes and adjustments made to the graphs. In our initial we had outlined a few different graphs, but in the final product a few of the graphs were different. But some graphs, like the box and whisker plot and the dynamic 3D terrain map, stayed the same as in the original proposal. Our original proposal was very realistic and well thought out when it came to details, but as we took a closer look at the data, we made some minor adjustments. A few non-critical elements were excluded due to time constraints. There were some challenges when it came to finding the dataset for the project. There were more complex features we wanted to add for the interactions for the graphs, but ultimately did not due to the time restrictions. For next time, a more comprehensive understanding of the dataset when planning the proposal would have helped us, as well as clearer communication and time management would have enhanced the overall project performance.
 
-- [List of team members and their roles/responsibilities.]
-Ta-Shen Chen(tchen128@asu.edu, ID:1218877556), Nina Bryson (nbryson1@asu.edu, ID: 1216354815), Raima Aiyer (raiyer1@asu.edu, ID: 1219074155), Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901)
+## Contributors
+Ta-Shen Chen(tchen128@asu.edu, ID:1218877556) - visualization 1
+Nina Bryson (nbryson1@asu.edu, ID: 1216354815)- visualization 6
+Raima Aiyer (raiyer1@asu.edu, ID: 1219074155) - visualization 2 and 5
+Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901) - visualization 3 and 4
