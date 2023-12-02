@@ -83,6 +83,9 @@ Links to the dataset;
 - Enhanced interactivity, including tooltips and linking between different views.
 
 
+
+
+
 ### Idioms
 
 The interface built is a web-based data visualization platform featuring interactive visual representations of median household income across U.S. states.
