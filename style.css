@@ -12,7 +12,14 @@ header {
     /* Add more styles for your control panel here */
 }
 
-#beeswarm-chart {
-    border: 1px solid #ccc;
-    /* Additional styles for your SVG */
+.tooltip {    
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden; /* Hide tooltip initially */
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 10;
 }
