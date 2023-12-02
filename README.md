@@ -150,11 +150,10 @@ The core goals of our project remained generally consistent throughout the proce
 
 - Navigate through the visualizations using the menu options.
 - Interact with the visualizations to explore different data aspects.
-- [Additional usage instructions based on the implemented features.]
 
-## Contributors
+## Team Work Load
 
-- Ta-Shen Chen(tchen128@asu.edu, ID:1218877556) - visualization 1 
-- Nina Bryson (nbryson1@asu.edu, ID: 1216354815)- visualization 6 (Innovative view)
+- Ta-Shen Chen(tchen128@asu.edu, ID:1218877556) - visualization 1 + merging visualizations
+- Nina Bryson (nbryson1@asu.edu, ID: 1216354815)- visualization 6 (Innovative view) + poster
 - Raima Aiyer (raiyer1@asu.edu, ID: 1219074155) - visualization 2 and 5 
 - Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901) - visualization 3 and 4
