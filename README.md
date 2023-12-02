@@ -1,19 +1,12 @@
 # CSE478-Group WIP Write UP
 
-## Title + names of group members
+## Contibutors: Ta-Shen Chen(tchen128@asu.edu, ID:1218877556), Nina Bryson (nbryson1@asu.edu, ID: 1216354815), Raima Aiyer (raiyer1@asu.edu, ID: 1219074155), Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901)
 
-  Title: The Cost of Living: Struggling to Make Ends Meet
+### Title: The Cost of Living: Struggling to Make Ends Meet
 
-  Contibutors:
-  Ta-Shen Chen(tchen128@asu.edu, ID:1218877556), Nina Bryson (nbryson1@asu.edu, ID: 1216354815), Raima Aiyer (raiyer1@asu.edu, ID: 1219074155), Sparsh Bansal (sbansa49@asu.edu, ID: 1229165901)
-
+  
 ## Overview
-
-![Phase 1 Visualization](https://github.com/XTC333/CSE478-Group/blob/main/imgs/phase%201%20viz.png?raw=true)
-
-![Phase 1.1 Visualization](https://github.com/XTC333/CSE478-Group/blob/main/imgs/phase%201.1%20viz.png?raw=true)
-
-  "The Cost of Living: Struggling to Make Ends Meet" is a data visualization project aimed at highlighting the economic challenges faced by various income groups across the United States. Using interactive visualizations, this project illustrates the disparities in income, cost of living, and housing affordability.
+"The Cost of Living: Struggling to Make Ends Meet" is a data visualization project aimed at highlighting the economic challenges faced by various income groups across the United States. Using interactive visualizations, this project illustrates the disparities in income, cost of living, and housing affordability.
 
 ## Data description
 
