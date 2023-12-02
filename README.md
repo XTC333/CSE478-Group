@@ -80,6 +80,41 @@
 - Interact with the visualizations to explore different data aspects.
 - [Additional usage instructions based on the implemented features.]
 
+### Idioms
+
+The interface built is a web-based data visualization platform featuring interactive visual representations of median household income across U.S. states.
+
+What the implemented visualizations and what do they allow a user to do? For each visualization, describe the encoding choices and your rationale for the design decisions.
+
+	1. Choropleth Map (Vis 1): Displays income disparities across U.S. states through color gradients, with interactivity enabling users to see specific state income levels upon hovering.
+ 
+	2. Scatter Plot (Vis 2): Correlates cost of living with median incomes, allowing users to observe and understand the relationship between these two variables.
+	
+ 3. Box and Whisker Plot (Vis 3): Shows the distribution of median incomes across the U.S., giving insights into the spread and outliers of income data.
+	
+ 4. Radial Progress Chart (Vis 4): Represents the percentage of households at different income levels in a radial format, allowing users to quickly grasp the income distribution.
+	
+ 5. Connected Scatter Plot (Vis 5): Shows the relationship between median income and unemployment rates, with the connection lines highlighting trends or changes over time.
+  
+ 6. Radial Histogram (Innovative Vis 6): Our innovative visualization, which uses a radial layout to display median income per state. The length of each bar corresponds to the income amount, offering a novel approach to comparing incomes across states.
+
+
+What are the interactions?
+
+- Interactivity is present in the form of tooltips and hover effects, providing more information on demand.
+  
+How are the views linked?
+
+- The views are linked conceptually, each offering a different perspective on median income data.
+  
+What algorithms are necessary to support your idioms?
+
+- The algorithms supporting these idioms include data sorting, scale computations, and arc generation for radial layouts. 
+
+Include screenshots detailing  the idioms in this section, to help the reader understand what you have done.
+You should explicitly specify which of your charts is considered innovative, any why.
+
+
 ## Reflection
 The core goals of our project remained generally consistent throughout the process with only a few changes and adjustments made to the graphs. In our initial we had outlined a few different graphs, but in the final product a few of the graphs were different. But some graphs, like the box and whisker plot and the dynamic 3D terrain map, stayed the same as in the original proposal. Our original proposal was very realistic and well thought out when it came to details, but as we took a closer look at the data, we made some minor adjustments. A few non-critical elements were excluded due to time constraints. There were some challenges when it came to finding the dataset for the project. There were more complex features we wanted to add for the interactions for the graphs, but ultimately did not due to the time restrictions. For next time, a more comprehensive understanding of the dataset when planning the proposal would have helped us, as well as clearer communication and time management would have enhanced the overall project performance.
 
