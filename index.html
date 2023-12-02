@@ -62,12 +62,12 @@
             <p>In the United States, the pursuit of the American Dream has historically been synonymous with the idea of prosperity, financial security, and upward mobility. However, our project, "The Cost of Living: Struggling to Make Ends Meet," unveils a sobering reality: the dream of achieving a comfortable life is slipping further from the grasp of average income earners. This visual essay aims to illuminate the growing lack of opportunities for those who fall within the middle-income bracket, while also distinguishing between average, above-average, and below-average incomes per state.</p>
         </div>
 
-          <!-- Placeholder for Visualizations -->
+        <!-- Placeholder for Visualizations -->
         <div class="visualization-placeholder">
-			<h3>Visualization 1: Income Disparity Choropleth Map</h3>
-			<p>Interactive map showing income disparities across states.</p>
-			<svg id="incomeDisparityMap"></svg> <!-- This is where D3.js will render the choropleth map -->
-		</div>
+            <h3>Visualization 1</h3>
+            <p>Interactive map showing income disparities across states</p>
+            <!-- Placeholder for the actual visualization (interactive map) -->
+        </div>
 
         <div id="scatterplot" class="visualization-placeholder">
             <h3>Visualization 2</h3>
@@ -82,7 +82,7 @@
 		<div class="visualization-placeholder">
 			<h3>Visualization 3</h3>
 			<p>Box-and-whisker plot showing the distribution of median incomes across the U.S.</p>
-			<!-- Placeholder for the actual visualization -->
+			<div id="boxplot"></div>
 		</div>
 
 		<!-- Visualization 4: Radial Progress Chart -->
@@ -104,20 +104,20 @@
 		<!-- Placeholder for Visualization 6 -->
 		<div class="visualization-placeholder">
 			<h3>Visualization 6: Innovative View</h3>
-			<p>Radial histogram chart that displays each bar as the median income per state. The length of the bar corresponds to the income amount.</p>
+			<p>Description of the innovative visualization, which could be an extension or a novel type.</p>
 			<div id="innovativeView"></div>
 			<!-- Placeholder for the actual innovative visualization -->
 		</div>
 		
-		<div id="tooltip" class="tooltip" style="opacity: 0; position: absolute;"></div>
-
+		
 		
     </div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-
     <!-- Link to your JavaScript file(s) -->
     <script src="group21.js"></script>
+    <script src="boxplot.js"></script>
+    <script src="progressBars.js"></script>
 	<script src="scatterplots.js"></script>
 </body>
 
